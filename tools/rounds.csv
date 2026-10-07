@@ -1,0 +1,20 @@
+# Source data for the built-in catalogue.
+#
+# Every round here is calibrated: mass, diameter, length and muzzle velocity are published
+# specifications, and the drag form factor is fitted by bisection to the published maximum range
+# in the last column. Nothing is inherited or estimated, and a round whose fit implied an
+# implausible drag coefficient was dropped rather than kept with the discrepancy absorbed into the
+# form factor. See docs/catalogue-review.md for the sources and the plausibility bounds.
+#
+# Spin rate, inertias, spin decay and the moment coefficients are derived by
+# generate_catalogue.py from the relations documented there, not stored.
+id,name,role,mass,diameter,length,muzzle_speed,drag_family,form_factor,stabilisation,quality,published_range,source
+Mortar60mm_HE,60mm M720 HE,HE,1.68,0.060,0.293,241,G1,0.8411,fin,calibrated,3490,M224 mortar
+Mortar60mm_SMK,60mm M722 Smoke WP,SMOKE,1.42,0.060,0.293,225,G1,0.7101,fin,calibrated,3200,M224 zone 4
+Mortar81mm_HE,81mm M821 HE,HE,4.2,0.081,0.393,341,G1,0.8896,fin,calibrated,5650,M252 / L16
+Mortar81mm_SMK,81mm M819 Smoke RP,SMOKE,4.1,0.081,0.470,297,G1,0.8850,fin,calibrated,4900,M252 zone 4
+Mortar81mm_ILL,81mm M853A1 Illumination,ILLUM,4.65,0.081,0.571,285,G1,0.8202,fin,calibrated,5050,FM 23-90
+Mortar120mm_HE,120mm M933 HE,HE,14.5,0.120,0.670,332,G1,0.7021,fin,calibrated,7200,M120 mortar
+Mortar120mm_SMK,120mm M929 Smoke WP,SMOKE,14.9,0.120,0.695,340,G1,0.7810,fin,calibrated,7200,M120 zone 4
+Howitzer155mm_HE,155mm M795 HE,HE,46.5,0.155,0.857,827,Shell,1.1302,spin,calibrated,22400,39 calibre tube
+Howitzer155mm_SMK,155mm M825 Smoke WP,SMOKE,44.0,0.155,0.803,684,Shell,1.0867,spin,calibrated,18000,effective range

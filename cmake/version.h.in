@@ -1,0 +1,13 @@
+#ifndef BALLISTICS_MM_VERSION_H
+#define BALLISTICS_MM_VERSION_H
+
+namespace Ballistics::MM {
+
+inline constexpr int VERSION_MAJOR = @PROJECT_VERSION_MAJOR@;
+inline constexpr int VERSION_MINOR = @PROJECT_VERSION_MINOR@;
+inline constexpr int VERSION_PATCH = @PROJECT_VERSION_PATCH@;
+inline constexpr const char* VERSION = "@PROJECT_VERSION@";
+
+} // namespace Ballistics::MM
+
+#endif

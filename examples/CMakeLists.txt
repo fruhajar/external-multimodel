@@ -1,0 +1,5 @@
+foreach(example compare table)
+  add_executable(mm_${example} ${example}.cpp)
+  target_link_libraries(mm_${example} PRIVATE ballistics-multimodel)
+  set_target_properties(mm_${example} PROPERTIES OUTPUT_NAME ${example})
+endforeach()
